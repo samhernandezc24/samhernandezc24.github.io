@@ -5,14 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Minecraft Fandom</title>
-    <style>
-      h1 {
-        color: green;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
   <body>
-    <h1>¡Minecraft Fandom!</h1>
-    <p>Our Minecraft Fandom Page!</p>
+    <div id="container">
+      <div class="header-top"></div>
+      <header class="header">
+        <div class="header-section header-section-p">
+          <h1 class="header-logo">Minecraft Fandom</h1>
+          <div class="header-hub">
+            <form class="header-search" action="/" method="GET">
+              <input
+                name="search"
+                type="search"
+                placeholder="Search Minecraft Fandom"
+              />
+              <input type="submit" value="" />
+              <a class="tip header-search-link" title="Advanced Search" href="#"
+                >Advanced Search</a
+              >
+            </form>
+          </div>
+        </div>
+      </header>
+    </div>
   </body>
 </html>
