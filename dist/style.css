@@ -1,3 +1,9 @@
+/* Breakpoints */
+@media (min-width: 64em) {
+  /* styles go here */
+}
+/* Min-Width: 640px, 1024px, 1400px */
+/* Max-Width: 639px, 1023px, 1399px  */
 html {
   font-size: 100%;
   box-sizing: border-box;
@@ -11,8 +17,216 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
   color: hsl(193deg, 100%, 7%);
   line-height: 1.3;
+}
+
+/* Text */
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  line-height: 1.15;
+  color: hsl(153deg, 64%, 23%);
+  margin-top: 0px;
+}
+
+h1 {
+  font-size: 2.31rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+/* Body Page */
+.page {
+  background-color: hsl(40deg, 100%, 80%);
+}
+
+/* Spacing */
+.container {
+  max-width: 100%;
+  margin-top: 0.375rem;
+  margin-right: 1.25rem;
+  margin-left: 1.25rem;
+}
+.container--pall {
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
+}
+
+.container-full {
+  max-width: 100%;
+  margin: 1.875rem;
+}
+
+/* Move an Element */
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+/* Flexbox */
+.flex {
+  display: flex;
+  /* Justify Content Space Between */
+  /* Justfiy Content Center */
+  /* Align Items Center */
+}
+.flex-jc-sb {
+  justify-content: space-between;
+}
+.flex-jc-c {
+  justify-content: center;
+}
+.flex-ai-c {
+  align-items: center;
+}
+
+/* Header Navigation */
+.header {
+  position: relative;
+  background-color: #155F3E;
+  height: 10.5rem;
+  z-index: 1;
+}
+.header__logo {
+  margin: 0 auto;
+  width: 6.25rem;
+  height: 6.381875rem;
+}
+.header__logo a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.header__logo img {
+  width: 6.25rem;
+  height: 6.381875rem;
+}
+.header nav {
+  position: relative;
+  background-color: hsl(158deg, 100%, 40%);
+}
+.header__links {
+  width: 100%;
+}
+.header__links a {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 400;
+  color: hsl(193deg, 100%, 7%);
+  transition: color 300ms ease-in-out;
+}
+.header__links a:not(:last-child) {
+  margin-right: 30px;
+}
+.header__links a.active {
+  display: inline-block;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(193deg, 100%, 7%);
+  padding: 0.625rem;
+}
+.header__links a.float-right {
+  margin-top: 10px;
+}
+.header__links a:hover {
+  color: rgb(212, 212, 216);
+}
+
+.hero {
+  background-color: #904419;
+  border-radius: 10px;
+  height: 11.25rem;
+  margin: 1.875rem;
+  padding: 1.25rem;
+}
+.hero__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #682F10 url(../../assets/img/dirt-bg.png) no-repeat center center;
+  background-size: cover;
+  border-radius: 10px;
+  height: 8.75rem;
+  padding: 1.25rem;
+}
+.hero__heading h1 {
+  color: hsl(41deg, 66%, 49%);
+  font-weight: 700;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.feature {
+  background-color: hsl(31deg, 96%, 72%);
+  border-radius: 0.375rem;
+  height: 1000px;
+  margin-bottom: 1.875rem;
+}
+.feature__content {
+  position: relative;
+  padding: 1.875rem;
+  margin: 0;
+}
+@media (min-width: 40em) {
+  .feature__grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+  }
+}
+.feature__item {
+  margin-right: 15px;
+}
+.feature__item img {
+  border-radius: 4px;
+  width: 6.25rem;
+  height: 8.333125rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.feature__item:nth-child(9) {
+  margin-right: 0px;
+}
+
+.thumbnail {
+  width: 100%;
+}
+.thumbnail__content {
+  background: url(/assets/img/bg-wool-dark.png) repeat;
+  padding: 50px 0 0 0;
+  height: 17.5rem;
+}
+
+.footer {
+  background-color: hsl(193deg, 100%, 7%);
+  color: hsl(180deg, 20%, 75%);
+}
+.footer .container-fluid {
+  padding: 2.5rem;
+}
+@media (min-width: 64em) {
+  .footer .container-fluid {
+    display: grid;
+    grid-template: 2fr 1fr 1fr 3fr;
+    grid-template-rows: 1fr auto;
+    justify-items: start;
+  }
+}
+.footer__logo {
+  display: inline-block;
+}
+@media (max-width: 63.9375em) {
+  .footer__logo {
+    margin-bottom: 1.875rem;
+  }
 }/*# sourceMappingURL=style.css.map */

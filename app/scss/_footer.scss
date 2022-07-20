@@ -1,0 +1,23 @@
+.footer {
+  background-color: $veryDarkCian;
+  color: $grayishCyan;  
+
+  .container-fluid {
+    padding: 2.5rem;
+    
+    @include breakpoint-up(large) {
+      display: grid;
+      grid-template: 2fr 1fr 1fr 3fr;
+      grid-template-rows: 1fr auto;
+      justify-items: start;      
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+
+    @include breakpoint-down(medium) {
+      margin-bottom: 1.875rem;
+    }
+  }
+}

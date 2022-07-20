@@ -1,0 +1,35 @@
+.feature {
+  background-color: $softOrange;
+  border-radius: .375rem;  
+  height: 1000px;
+  margin-bottom: 1.875rem;
+
+  &__content {
+    position: relative;
+    padding: 1.875rem;
+    margin: 0;     
+  }
+
+  &__grid {
+    @include breakpoint-up(medium) {
+      display: flex;
+      flex-wrap: wrap;     
+      width: 70%; 
+    } 
+  }
+
+  &__item {
+    margin-right: 15px;
+
+    img {      
+      border-radius: 4px;
+      width: 6.25rem;
+      height: 8.333125rem;
+      object-fit: cover;
+    }
+  }
+
+  &__item:nth-child(9) {
+    margin-right: 0px;
+  }
+}
